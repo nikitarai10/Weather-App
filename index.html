@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+      <div class="headerimage">        
+        <h1 class="text">Weather</h1>
+        <form class="searchlocation">
+          <input
+            type="text"
+            name="city"
+            placeholder="Enter the city?"
+          />
+          <button type="button" id="button">+</button>
+        </form>
+      </div>
+  
+        <div class="content">
+             <section class="sectionOne">
+              <div class="temperature-value">
+                <span>-&deg;C</span>
+              </div>
+
+              <div class="farhenheit-value">
+                  <span>-&deg;F</span>
+              </div>
+            </section>
+             
+            <div class="image-icon">
+              <img src="./icon/unknown.png" alt="">
+            </div>
+    
+             <section class="sectiontwo">
+
+              <div class="describe-value">
+                <div class="weatherinfo">
+                <p class="condition"> - </p>
+                </div>
+                <div class="infocity">
+                <p class="cityname">City</p>
+              </div>
+            </div>
+            
+              <div class="information">
+                <span>Humidity</span>
+                <p class="humid">-%</p>
+              </div>
+            </section>
+
+            </div>     
+           </div>
+  
+      <script src="./request.js"></script>
+  <script src="./weather.js"></script>
+    
+</body>
+</html>

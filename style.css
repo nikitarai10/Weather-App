@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  background: #666;
+  color: black;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.container {
+  position: relative;
+  margin: 4% auto;
+  text-align: center;
+  border-radius:1em;
+  padding:0.8rem;
+  background: #edf1f6;
+  box-shadow: 0px 0 20px 10px rgb(80, 80, 80);
+  max-width: 350px;
+  min-width: 300px;
+}
+.searchlocation input{
+  width: 85%;
+  background: #e0e3ee;
+  border: 1px solid rgb(51, 40, 116);
+  padding:0.6em; 
+  outline: none;
+  letter-spacing: 0.87px;
+  font-size: 0.9rem;
+  border-radius: 60px;
+  margin:1rem 0;
+}
+.searchlocation input:focus{
+  border:none;
+  background: #fbfafa;
+  box-shadow:0 2px 8px rgb(181, 184, 209);
+}
+.sectionOne{
+  margin-top: 1.2rem; 
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.sectiontwo{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+.temperature-value{
+  flex-basis: 50%;
+  font-size: 2.2rem;
+}
+.farhenheit-value{
+  flex-basis: 40%;
+  font-size: 2.2rem;
+}
+.describe-value{
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.infocity{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.information{
+  flex-basis: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+.information span{
+  font-size: 1.2rem;
+}
+p.cityname{
+  margin-right: 0.5rem;
+}
+p.humid{
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+h1.text{
+  font-size: 2.2rem;
+  margin: 0.5rem 0;
+}
+.condition{
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0.3rem;
+}
+form{
+  width: 100%;
+}
+#button{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2.2rem;
+  margin-left: 3px;
+  border: none;
+  padding:0 0.33em;
+  border-radius: 50%;
+  outline: none;
+  background: rgb(30, 18, 94);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width:800px){
+   .container{
+    max-width: 400px;
+    min-width: 300px;
+     }
+     .searchlocation input{
+      padding:0.8em; 
+      font-size: 1rem;
+     }
+     .temperature-value,.farhenheit-value{
+      font-size: 3.3rem;
+    }
+    .infocity{
+      font-size: 1.5rem;
+    }
+    p.humid{
+      font-size: 2.5rem;
+    }
+    h1.text{
+      font-size: 2.5rem;
+    } 
+    .condition{
+      font-size: 1.4rem;
+    }  
+    .information span{
+      font-size: 1.5rem;
+    } 
+    #button{
+      font-size: 2.9rem;
+      padding:0 0.32em;
+    }
+  }
